@@ -39,12 +39,11 @@ namespace Utils {
 
     void PrintHelp(const char* programName) {
         std::cout << "CloudIPFilter - Advanced Cloud Infrastructure IP Filter\n"
-                  << "Usage: " << programName << " <input_file> [-o <output_file>]\n\n"
-                  << "Arguments:\n"
-                  << "  <input_file>          Path to a text file containing a list of IPs (one per line).\n\n"
+                  << "Usage: " << programName << " -i <input_file> [-o <output_file>]\n\n"
                   << "Options:\n"
-                  << "  -o <output_file>      Path to save the filtered results. If omitted, output is sent to stdout.\n"
-                  << "  -h, --help            Show this professional help menu.\n\n"
+                  << "  -i/--input <input_file>         Path to a text file containing a list of IPs (one per line).\n"
+                  << "  -o/--output <output_file>       Path to save the filtered results. If omitted, output is sent to stdout.\n"
+                  << "  -h/--help                       Show this professional help menu.\n\n"
                   << "Description:\n"
                   << "  This tool identifies and removes IP addresses belonging to known cloud service \n"
                   << "  providers (Cloudflare, CloudFront, AWS, etc.) using CIDR matching and pattern analysis.\n";
