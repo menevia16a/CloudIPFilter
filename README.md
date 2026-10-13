@@ -36,15 +36,11 @@ sudo make install
 
 ```bash
 # Basic usage (outputs to stdout)
-CloudIP    -i targets.txt
+CloudIP -i targets.txt
 
 # Save results to a file
 CloudIPFilter -i targets.txt -o clean_ips.txt
 
 # Using different argument order
 CloudIPFilter -o results.txt -i input_list.txt --help
-```
-
-## License
-MIT
 ```
