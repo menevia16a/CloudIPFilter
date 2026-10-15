@@ -58,7 +58,7 @@ int main(int argc, char* argv[]) {
     }
 
     if (inputFile.empty()) {
-        printUsageError("Input file must be specified using the -i flag.");
+        printUsageError("Input file must be specified using the input flag.");
 
         return 1;
     }

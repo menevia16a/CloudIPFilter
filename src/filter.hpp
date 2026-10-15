@@ -20,7 +20,11 @@ public:
 private:
     std::vector<CIDRRange> cloudRanges;
 
-    void LoadKnownCloudRanges();
+    std::string FetchURL(const std::string& url);
+
+    void RefreshRanges();
+    void FetchAWSRanges();
+    void FetchCloudflareRanges();
 };
 
 #endif // FILTER_HPP

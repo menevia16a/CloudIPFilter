@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories(src)
 
 find_package(CURL REQUIRED)
+find_package(nlohmann_json REQUIRED)
 
 add_executable(CloudIPFilter
     src/main.cpp
@@ -14,7 +15,7 @@ add_executable(CloudIPFilter
     src/utils.cpp
 )
 
-target_link_libraries(CloudIPFilter PRIVATE CURL::libcurl)
+target_link_libraries(CloudIPFilter PRIVATE CURL::libcurl nlohmann_json::nlohmann_json)
 
 install(TARGETS CloudIPFilter DESTINATION bin)
 
