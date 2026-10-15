@@ -14,12 +14,13 @@ An advanced C++ CLI tool designed for cybersecurity professionals (Bug Bounty hu
 
 - `cmake` (3.10+)
 - `libcurl` (Development headers)
+- `nlohmanjson` (Development headers)
 - `g++` or `clang`
 
 On Debian/Parrot OS:
 ```bash
 sudo apt update
-sudo apt install cmake libcurl4-openssl-dev build-essential
+sudo apt install cmake libcurl4-openssl-dev nlohmann-json3-dev build-essential
 ```
 
 ## Installation
@@ -40,7 +41,4 @@ CloudIP -i targets.txt
 
 # Save results to a file
 CloudIPFilter -i targets.txt -o clean_ips.txt
-
-# Using different argument order
-CloudIPFilter -o results.txt -i input_list.txt --help
 ```
